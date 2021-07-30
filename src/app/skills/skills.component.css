@@ -1,0 +1,12 @@
+.skills {
+  width: 45%;
+  margin-left: -10px;
+  padding-left: 0px;
+}
+.skills li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
