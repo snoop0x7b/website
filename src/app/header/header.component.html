@@ -3,23 +3,24 @@
     <img id="logo" src="/assets/images/cat-selfy.jpg" />
     Zach Stein
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-target="#navbar" aria-controls="navbar"
+          aria-expanded="false" aria-label="Toggle navigation"
+          (click)="isNavbarCollapsed = !isNavbarCollapsed">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto">
+  <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse collapse" id="navbar">
+    <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/home">Home</a>
+        <a class="nav-link" [routerLink]="['/']">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/woodwork">Woodwork</a>
+        <a class="nav-link" [routerLink]="['/woodwork']">Woodwork</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/photography">Photography</a>
+        <a class="nav-link" [routerLink]="['/photography']">Photography</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/resume">Resume</a>
+        <a class="nav-link" [routerLink]="['/resume']">Resume</a>
       </li>
     </ul>
   </div>
