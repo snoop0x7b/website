@@ -1,7 +1,0 @@
-:host /deep/ span.sr-only {
-  display: none !important;
-}
-:host /deep/ .carousel-control-next-icon, :host /deep/ .carousel-control-prev-icon {
-  height: 4rem;
-  width: 4rem;
-}
