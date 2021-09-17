@@ -11,6 +11,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WoodComponent } from './wood/wood.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     ResumeComponent,
     SkillsComponent,
-    WoodComponent
+    WoodComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
