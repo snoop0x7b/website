@@ -1,6 +1,6 @@
 name: Build Zach Site
 on:
-        pubsh:
+        push:
                 branches:
                         - 'master'
 
