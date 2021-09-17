@@ -1,0 +1,14 @@
+<div class="container-xxl">
+<h1>Zach Stein's Wood Work</h1>
+<p>
+  I've been making fine furniture from hardwoods for 3 years now. I make stuff for myself, stuff for friends, and commission pieces. Below are a few examples of pieces I've made.
+</p>
+<ngb-carousel *ngIf="furniture">
+  <ng-template ngbSlide *ngFor="let furniturePiece of furniture">
+    <img [src]="furniturePiece.imagePath" alt="{{furniturePiece.title}}" style="margin-left: auto; margin-right: auto; width: 100%"/>
+    <div class="carousel-caption">
+      <h3>{{furniturePiece.title}}</h3>
+    </div>
+  </ng-template>
+</ngb-carousel>
+</div>

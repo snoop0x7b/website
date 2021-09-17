@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { SkillsComponent } from './skills/skills.component';
+import { WoodComponent } from './wood/wood.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { SkillsComponent } from './skills/skills.component';
     FooterComponent,
     HomeComponent,
     ResumeComponent,
-    SkillsComponent
+    SkillsComponent,
+    WoodComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
