@@ -1,2 +1,3 @@
 #main-content-area {
+    min-height: calc(100vmax - 194px);
 }
