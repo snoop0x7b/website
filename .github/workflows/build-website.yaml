@@ -43,4 +43,4 @@ jobs:
                                 FOLDER: deploy_dist/website
                         - name: Copy Index
                           run: |
-                                cp index.html 404.html
+                                cp deploy_dist/website/index.html deploy_dist/website/404.html
