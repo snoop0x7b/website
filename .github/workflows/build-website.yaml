@@ -42,5 +42,7 @@ jobs:
                                 BRANCH: gh-pages
                                 FOLDER: deploy_dist/website
                         - name: Copy Index
-                          run: |
-                                cp deploy_dist/website/index.html deploy_dist/website/404.html
+                          uses: canastro/copy-file-action@master
+                          with:
+                                  source: "index.html"
+                                  target: "404.html"
